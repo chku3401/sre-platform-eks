@@ -4,7 +4,7 @@ This directory contains Terraform configurations for setting up an EKS-ready pla
 
 ---
 
-## 📋 Prerequisites
+## Prerequisites
 
 - **Terraform**: Installed on your local machine. [Install Terraform](https://developer.hashicorp.com/terraform/tutorials/aws-get-started/install-cli)
 - **AWS CLI**: Configured with credentials for your AWS account.
@@ -13,7 +13,7 @@ This directory contains Terraform configurations for setting up an EKS-ready pla
 
 ---
 
-## 🚀 Setup Instructions
+## Setup Instructions
 
 1. **Initialize Terraform**:
    ```bash
@@ -42,7 +42,7 @@ This directory contains Terraform configurations for setting up an EKS-ready pla
 
 ---
 
-## ✅ Validation
+## Validation
 
 After applying the Terraform configuration, verify the deployment:
 
@@ -74,7 +74,7 @@ After applying the Terraform configuration, verify the deployment:
 
 ---
 
-## 🛠️ Troubleshooting
+## Troubleshooting
 
 - **Terraform Initialization Fails**:
   - Ensure your AWS credentials are configured correctly:

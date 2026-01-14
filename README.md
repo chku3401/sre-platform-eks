@@ -8,7 +8,7 @@ It reflects how reliability engineering is applied in production environments.
 
 ---
 
-## 📖 Table of Contents
+## Table of Contents
 
 - [Overview](#overview)
 - [Observability Evidence](#-observability-evidence)
@@ -22,7 +22,7 @@ It reflects how reliability engineering is applied in production environments.
 
 ---
 
-## 🌟 Overview
+## Overview
 
 This project showcases a production-grade SRE platform built on Kubernetes. Key components include:
 
@@ -35,7 +35,7 @@ This project showcases a production-grade SRE platform built on Kubernetes. Key 
 
 ---
 
-## 📊 Observability Evidence
+## Observability Evidence
 
 The repository includes screenshots from live Grafana dashboards captured during load and scaling tests. These dashboards provide insights into:
 
@@ -48,7 +48,7 @@ Screenshots are stored under `docs/screenshots/`.
 
 ---
 
-## 🚀 One-Command Demo
+## One-Command Demo
 
 ```bash
 bash scripts/demo.sh
@@ -62,7 +62,7 @@ bash scripts/demo.sh
 
 ---
 
-## 🏗️ Architecture
+## Architecture
 
 ![Architecture Diagram](docs/screenshots/architecture-diagram-placeholder.txt)
 
@@ -75,7 +75,7 @@ The platform includes:
 
 ---
 
-## 🔑 Key Features
+## Key Features
 
 - **Observability**: Real-time metrics and dashboards.
 - **Autoscaling**: Horizontal Pod Autoscaler (HPA) in action.
@@ -85,7 +85,7 @@ The platform includes:
 
 ---
 
-## 📁 Repo Structure
+## Repo Structure
 
 - `apps/`: Demo Python service and Helm chart  
 - `platform/`: Observability stack and alerting  
@@ -95,7 +95,7 @@ The platform includes:
 
 ---
 
-## 🛠️ Setup Instructions
+## Setup Instructions
 
 ### Step 1: Clone the Repository
 ```bash
@@ -127,7 +127,7 @@ helm install demo-service apps/demo-service/chart/
 
 ---
 
-## 🧑‍💻 Usage
+## Usage
 
 ### Running Load Tests
 ```bash
@@ -141,6 +141,6 @@ bash tests/chaos/pod-kill.sh
 
 ---
 
-## 👤 Author
+## Author
 
 Charith Kumar

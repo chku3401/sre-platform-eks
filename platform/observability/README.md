@@ -4,7 +4,7 @@ This directory contains the configurations for the observability stack, which in
 
 ---
 
-## 🌟 Overview
+## Overview
 
 - **Prometheus**: Collects metrics from Kubernetes and application workloads. It acts as the central repository for time-series data.
 - **Grafana**: Visualizes metrics through customizable dashboards, enabling teams to monitor system health and performance.
@@ -14,7 +14,7 @@ Dashboards are located in `platform/observability/dashboards/` and can be custom
 
 ---
 
-## 🚀 Setup Instructions
+## Setup Instructions
 
 1. **Deploy the Observability Stack**:
    Apply the Kubernetes manifests to deploy Prometheus, Grafana, and Alertmanager:
@@ -36,7 +36,7 @@ Dashboards are located in `platform/observability/dashboards/` and can be custom
 
 ---
 
-## ✅ Validation
+## Validation
 
 1. **Check Prometheus**:
    ```bash
@@ -55,7 +55,7 @@ Dashboards are located in `platform/observability/dashboards/` and can be custom
 
 ---
 
-## 🖥️ Dashboards
+## Dashboards
 
 - Dashboards are stored as JSON files in `platform/observability/dashboards/`.
 - If dashboards load but show "datasource not found," update the datasource UID in the JSON or edit the dashboard in Grafana.
@@ -63,7 +63,7 @@ Dashboards are located in `platform/observability/dashboards/` and can be custom
 
 ---
 
-## 🛠️ Troubleshooting
+## Troubleshooting
 
 - **Datasource Not Found**:
   - Edit the dashboard in Grafana and select the correct datasource.

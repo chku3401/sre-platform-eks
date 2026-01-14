@@ -4,7 +4,7 @@ This is a simple Nginx-based service designed to demonstrate platform behavior, 
 
 ---
 
-## 📋 Prerequisites
+## Prerequisites
 
 - A running Kubernetes cluster (e.g., `kind` or a cloud provider).
 - Helm installed on your local machine.
@@ -15,19 +15,7 @@ This is a simple Nginx-based service designed to demonstrate platform behavior, 
 
 ---
 
-## 🚀 Deployment
-
-To deploy the demo service, run the following command:
-
-```bash
-helm upgrade --install demo-service ./chart -n demo
-```
-
-This will install the service in the `demo` namespace using the provided Helm chart.
-
----
-
-## ✅ Validation
+## Validation
 
 After deploying, verify that the service is running:
 
@@ -54,7 +42,7 @@ After deploying, verify that the service is running:
 
 ---
 
-## 🛠️ Troubleshooting
+## Troubleshooting
 
 - **HPA Doesn't Scale**:
   - Ensure the `metrics-server` is installed and running in your cluster.

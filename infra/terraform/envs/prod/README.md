@@ -4,13 +4,13 @@ This directory contains the Terraform configurations for the production environm
 
 ---
 
-## 🌟 Overview
+## Overview
 
 The production environment is the final deployment stage where applications are made available to end-users. It is optimized for performance, reliability, and scalability to ensure a seamless user experience.
 
 ---
 
-## 🚀 Usage Instructions
+## Usage Instructions
 
 1. **Initialize Terraform**:
    Navigate to the `infra/terraform/envs/prod/` directory and initialize Terraform:
@@ -38,7 +38,7 @@ The production environment is the final deployment stage where applications are 
 
 ---
 
-## 🛠️ Troubleshooting
+## Troubleshooting
 
 - **Terraform Initialization Errors**:
   - Ensure that the backend configuration is correct.

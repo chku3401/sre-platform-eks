@@ -4,13 +4,13 @@ This directory contains the Terraform configurations for the development environ
 
 ---
 
-## 🌟 Overview
+## Overview
 
 The development environment is a sandboxed setup where new features and changes can be tested before being promoted to production. It mirrors the production environment as closely as possible to ensure reliable testing outcomes.
 
 ---
 
-## 🚀 Usage Instructions
+## Usage Instructions
 
 1. **Initialize Terraform**:
    Navigate to the `infra/terraform/envs/dev/` directory and initialize Terraform:
@@ -38,7 +38,7 @@ The development environment is a sandboxed setup where new features and changes 
 
 ---
 
-## 🛠️ Troubleshooting
+## Troubleshooting
 
 - **Terraform Initialization Errors**:
   - Ensure that the backend configuration is correct.
