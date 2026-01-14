@@ -1,0 +1,34 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: sre-lab-dashboards
+  namespace: observability
+  labels:
+    grafana_dashboard: "1"
+data:
+  cpu-hpa.json: |
+    {
+      "id": null,
+      "uid": "sre-lab-cpu-hpa",
+      "title": "SRE Lab: CPU + HPA",
+      "tags": ["sre-lab", "kubernetes"],
+      "timezone": "browser",
+      "schemaVersion": 38,
+      "version": 1,
+      "refresh": "10s",
+      "panels": [],
+      "time": { "from": "now-15m", "to": "now" }
+    }
+  pod-restarts.json: |
+    {
+      "id": null,
+      "uid": "sre-lab-restarts",
+      "title": "SRE Lab: Pod Restarts",
+      "tags": ["sre-lab", "kubernetes"],
+      "timezone": "browser",
+      "schemaVersion": 38,
+      "version": 1,
+      "refresh": "10s",
+      "panels": [],
+      "time": { "from": "now-30m", "to": "now" }
+    }

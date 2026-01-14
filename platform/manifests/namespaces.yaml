@@ -1,0 +1,11 @@
+# Keep namespaces explicit so cluster state is predictable.
+# 'demo' holds the workload. 'observability' holds Prometheus/Grafana.
+apiVersion: v1
+kind: Namespace
+metadata:
+  name: demo
+---
+apiVersion: v1
+kind: Namespace
+metadata:
+  name: observability

@@ -1,0 +1,7 @@
+# Minimal RBAC placeholder.
+# In a real platform repo, we'd define roles per namespace and avoid default SA usage.
+apiVersion: v1
+kind: ServiceAccount
+metadata:
+  name: demo-sa
+  namespace: demo

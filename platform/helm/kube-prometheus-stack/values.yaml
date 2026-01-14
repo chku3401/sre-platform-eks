@@ -1,0 +1,23 @@
+# Keep defaults unless we have a reason to change them.
+# The main customization here is dashboard loading via the Grafana sidecar.
+
+grafana:
+  adminUser: admin
+  service:
+    type: ClusterIP
+
+  # Sidecar watches configmaps with label grafana_dashboard=1 and loads dashboards.
+  sidecar:
+    dashboards:
+      enabled: true
+      label: grafana_dashboard
+      labelValue: "1"
+      folder: /tmp/dashboards
+
+  # Keep dashboards enabled; we also add our own JSON dashboards via configmaps.
+  defaultDashboardsEnabled: true
+
+prometheus:
+  prometheusSpec:
+    retention: 2d        # short retention is fine for a local lab
+    scrapeInterval: 30s  # stable enough to observe scaling and failures

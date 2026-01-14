@@ -1,0 +1,22 @@
+# Keep the workload simple so the platform behavior is the focus.
+image:
+  repository: nginx
+  tag: "1.25"
+
+service:
+  type: ClusterIP
+  port: 80
+
+resources:
+  requests:
+    cpu: 50m        # low request so HPA has room to scale with load
+    memory: 64Mi
+  limits:
+    cpu: 200m       # cap to avoid runaway CPU in a lab environment
+    memory: 128Mi
+
+hpa:
+  enabled: true
+  minReplicas: 1
+  maxReplicas: 5   # small on purpose so scaling is visible and predictable
+  targetCPUUtilizationPercentage: 50
